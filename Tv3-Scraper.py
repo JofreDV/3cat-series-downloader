@@ -62,7 +62,7 @@ def main():
     command = (
         f'yt-dlp --batch-file episodis.txt '
         f'--parse-metadata "title:T(?P<season_number>\\d+)x" '
-        f'-o "{show_name.title()}/Season %(season_number)s/%(title)s.%(ext)s"'
+        f'-o "{show_name.title()}/Temporada %(season_number)s/%(title)s.%(ext)s"'
     )
 
     print(f"S'han trobat {len(unique_episode_ids)} capítols de '{show_name.title()}'.")
